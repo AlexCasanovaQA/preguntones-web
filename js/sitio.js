@@ -38,47 +38,73 @@
     if (nodo) nodo.hidden = !hayTienda;
   });
 
-  var copiar = document.getElementById("copiar-ip");
-  if (copiar) {
-    if (datos.hostname) {
-      copiar.textContent = "Copiar " + datos.hostname;
-    }
-    copiar.addEventListener("click", function () {
-      var ip = datos.hostname || copiar.textContent.replace(/^Copiar\s+/, "");
-      var aviso = document.getElementById("copiado");
-      var mostrar = function () {
-        if (aviso) {
-          aviso.hidden = false;
-        }
-      };
-      var porArea = function () {
-        var area = document.createElement("textarea");
-        area.value = ip;
-        area.setAttribute("readonly", "");
-        area.style.position = "fixed";
-        area.style.top = "0";
-        area.style.left = "0";
-        area.style.opacity = "0";
-        document.body.appendChild(area);
-        area.focus();
-        area.select();
-        var ok = false;
-        try {
-          ok = document.execCommand("copy");
-        } catch (error) {
-          ok = false;
-        }
-        document.body.removeChild(area);
-        if (ok) {
-          mostrar();
-        }
-      };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(ip).then(mostrar).catch(porArea);
-      } else {
-        porArea();
-      }
+  var menuNav = document.getElementById("menu-principal");
+  var abrirMenu = document.querySelector(".menu-abrir");
+  if (menuNav && abrirMenu) {
+    abrirMenu.addEventListener("click", function () {
+      var abierto = menuNav.classList.toggle("abierto");
+      abrirMenu.setAttribute("aria-expanded", abierto ? "true" : "false");
     });
+  }
+
+  var copiadores = document.querySelectorAll("[data-copiar-ip], #copiar-ip");
+  for (var c = 0; c < copiadores.length; c++) {
+    (function (copiar) {
+      copiar.addEventListener("click", function () {
+        var ip = datos.hostname || "play.preguntones.es";
+        var aviso = copiar.parentElement.querySelector(".copiado") || document.getElementById("copiado");
+        var accion = copiar.querySelector(".ip-accion");
+        var textoPrevio = accion ? accion.textContent : "";
+        var listo = false;
+        var mostrar = function () {
+          if (listo) {
+            return;
+          }
+          listo = true;
+          if (aviso) {
+            aviso.hidden = false;
+          }
+          if (accion) {
+            accion.textContent = "Copiado";
+            window.setTimeout(function () {
+              accion.textContent = textoPrevio;
+            }, 1800);
+          }
+        };
+        var porArea = function () {
+          var area = document.createElement("textarea");
+          area.value = ip;
+          area.setAttribute("readonly", "");
+          area.style.position = "fixed";
+          area.style.top = "0";
+          area.style.left = "0";
+          area.style.opacity = "0";
+          document.body.appendChild(area);
+          area.focus();
+          area.select();
+          var ok = false;
+          try {
+            ok = document.execCommand("copy");
+          } catch (error) {
+            ok = false;
+          }
+          document.body.removeChild(area);
+          if (ok) {
+            mostrar();
+          }
+        };
+        window.setTimeout(function () {
+          if (!listo) {
+            porArea();
+          }
+        }, 500);
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(ip).then(mostrar).catch(porArea);
+        } else {
+          porArea();
+        }
+      });
+    })(copiadores[c]);
   }
 
 })();

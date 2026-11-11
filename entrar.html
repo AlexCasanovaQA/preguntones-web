@@ -5,24 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Entrar · Preguntones</title>
   <meta name="description" content="Cómo entrar en Preguntones con Minecraft Java 26.1.2. Añade el servidor play.preguntones.es, sin puerto. Bedrock no está abierto el día uno.">
-  <meta name="theme-color" content="#3f4f38">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect fill='%233f4f38' width='16' height='16'/%3E%3Crect fill='%23c4512c' y='12' width='16' height='4'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#07140e">
+  <link rel="icon" href="img/marca.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Silkscreen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Silkscreen&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
   <a class="saltar" href="#contenido">Saltar al contenido</a>
   <header class="cabecera">
-    <div class="envoltorio">
-      <p class="antetitulo">¿Y tú qué preguntas?</p>
+    <div class="envoltorio barra">
       <a class="marca" href="index.html"><span data-campo="nombre">Preguntones</span></a>
-      <nav class="menu" aria-label="Principal">
+      <button class="menu-abrir" type="button" aria-expanded="false" aria-controls="menu-principal"><span class="cuando-cerrado">Menú</span><span class="cuando-abierto">Cerrar</span></button>
+      <nav class="menu" id="menu-principal" aria-label="Principal">
         <a href="index.html">Inicio</a>
         <a href="entrar.html" aria-current="page">Entrar</a>
         <a href="normas.html">Normas</a>
         <a href="tienda.html">Tienda</a>
+        <a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a>
       </nav>
     </div>
   </header>
@@ -35,6 +36,8 @@
       <div>
         <p class="kicker">Dirección del servidor</p>
         <p class="ip" data-campo="hostname">play.preguntones.es</p>
+        <button class="boton boton-chico" type="button" data-copiar-ip>Copiar IP</button>
+        <p class="copiado" hidden>Copiado. Pégalo en Multijugador.</p>
       </div>
       <div>
         <p class="kicker">Versión exacta</p>
