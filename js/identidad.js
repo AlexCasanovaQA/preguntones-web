@@ -6,7 +6,7 @@
     hostname: "play.preguntones.es",
     version: "26.1.2",
     discord: "https://discord.gg/ZjcnvSkqsQ",
-    tiendaUrl: "",
+    tiendaUrl: "https://preguntones.tebex.store/package/7805453",
     precioVecino: "4,99 €",
     cita: "sábado a las 21:30, hora de Madrid"
   };

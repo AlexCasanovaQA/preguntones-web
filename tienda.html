@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tienda · Preguntones</title>
-  <meta name="description" content="En Preguntones el Mercado y la bandera se pagan con duros. En la web, el pase cuesta 4,99 € con IVA y hoy no hay botón de pago.">
+  <meta name="description" content="En Preguntones el Mercado y la bandera se pagan con duros. El pase cuesta 4,99 € con IVA, una vez.">
   <meta name="theme-color" content="#07140e">
   <link rel="icon" href="img/marca.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
   <main id="contenido" class="envoltorio" tabindex="-1">
     <p class="kicker">Precios</p>
     <h1>Tienda de <span data-campo="nombre">Preguntones</span></h1>
-    <p class="entradilla">Jugar es gratis. Dentro del servidor se compra con duros. En esta página, el único precio en euros es el pase, y hoy no hay botón de pago.</p>
+    <p class="entradilla">Jugar es gratis. Dentro del servidor se compra con duros. En esta página, el único precio en euros es el pase.<span class="solo-sin-cobro"> Hoy no hay botón de pago.</span><span class="solo-con-cobro" hidden> El botón abre el pago en Tebex.</span></p>
 
     <div class="caminos">
       <article class="camino camino-oro">
@@ -42,7 +42,7 @@
       <article class="camino">
         <p class="kicker">En esta web</p>
         <h2>Solo el pase</h2>
-        <p>El pase cuesta <strong><span data-campo="precioVecino">4,99 €</span> con IVA</strong>, una vez. Abre la parte de pago del pase. El nombre verde llega al cerrar el nivel 8. Un adorno suelto no está a la venta. Esta página no cobra.</p>
+        <p>El pase cuesta <strong><span data-campo="precioVecino">4,99 €</span> con IVA</strong>, una vez. Abre la parte de pago del Pase de Batalla. El nombre verde se reclama con un clic en el nivel 8. Un adorno suelto no está a la venta. <span class="solo-sin-cobro">Esta página no cobra.</span><span class="solo-con-cobro" hidden>El botón abre Tebex: allí escribes tu nombre del juego y ves otra vez el total, con el IVA.</span></p>
         <p><a class="boton boton-linea" href="#vip">Ver el pase</a></p>
       </article>
     </div>
@@ -57,7 +57,7 @@
         <article class="ficha">
           <p class="chip chip-oro">Mercado</p>
           <h3>Bloques, luces y lo de cada uno</h3>
-          <p>Botón Mercado del panel, o <strong>/mercado</strong>. El barrio vende luces, madera, piedra, cristal, muebles y un poco de comida y hierro, más caro que hacerlo tú. 32 troncos de roble cuestan 48 duros. Sus tablones, 12. La ficha de aldeano, 40, hasta 8 por persona. Entre jugadores, un montón va de 1 a 48 la unidad y una compra no pasa de 96. Una pieza se vende entera, de 1 a 500. El barrio se queda el 10 %.</p>
+          <p>El aldeano Mercado del spawn o <strong>/mercado</strong>. No está en el panel. El barrio vende luces, madera, piedra, cristal, muebles y un poco de comida y hierro, más caro que hacerlo tú. 32 troncos de roble cuestan 48 duros. Sus tablones, 12. La ficha de aldeano, 40, hasta 8 por persona. Entre jugadores, un montón va de 1 a 48 la unidad y una compra no pasa de 96. Una pieza se vende entera, de 1 a 500. El barrio se queda el 10 %.</p>
         </article>
         <article class="ficha">
           <p class="chip chip-cielo">Bandera</p>
@@ -72,7 +72,7 @@
       </div>
       <article class="hoja">
         <h2>El pack</h2>
-        <p>Al conectar, el juego pide un pack de recursos. Hay que aceptarlo: si no, no entras. El archivo de esta página lleva también el tablero del pase y el reciclador. Si al entrar las medallas salen como los objetos de siempre, el premio entra igual. También se puede <a href="pack/cofre-venta.zip">bajar el pack</a> y meterlo a mano en el lanzador.</p>
+        <p>Al conectar, el juego pide un pack de recursos. Hay que aceptarlo: si no, no entras. El archivo de esta página lleva también el reciclador. También se puede <a href="pack/cofre-venta.zip">bajar el pack</a> y meterlo a mano en el lanzador.</p>
       </article>
     </section>
 
@@ -83,10 +83,10 @@
         <h2>El pase</h2>
         <p class="precio"><span data-campo="precioVecino">4,99 €</span></p>
         <p class="precio-nota">IVA incluido. Se paga una vez, no es una cuota, y dura mientras el servidor exista.</p>
-        <p>Abre el camino de pago del pase, junto al aldeano del spawn. El nombre verde, la etiqueta <strong>VIP</strong> y la frase «entra al barrio» llegan al cerrar el nivel 8, con el pase ya pagado. No da fuerza, vida, duros, terreno ni ventaja en la XO del sábado.</p>
+        <p>Abre el camino de pago del Pase de Batalla, el aldeano del spawn. Cada premio se reclama con un clic cuando llegas a su nivel. El nombre verde, la etiqueta <strong>VIP</strong> y la frase «entra al barrio» son el premio del nivel 8, con el pase ya pagado. No da fuerza, vida, duros, terreno ni ventaja en la XO del sábado.</p>
         <ul>
           <li>El camino de oro, con títulos y la estela, según el nivel.</li>
-          <li>Al cerrar el 8: etiqueta verde delante del nombre.</li>
+          <li>Al reclamar el 8: la etiqueta VIP delante del nombre, en el chat, en la lista y encima de la cabeza.</li>
           <li>El nombre en ese mismo verde.</li>
           <li>La frase «entra al barrio» cuando entras.</li>
           <li>La estela se pinta al caminar. Dorada desde el nivel 4 y verde con el VIP. No da vuelo.</li>
@@ -99,16 +99,16 @@
     </article>
 
     <section class="seccion" aria-labelledby="adornos">
-      <p class="kicker">Al cerrar el 8</p>
+      <p class="kicker">Al reclamar el 8</p>
       <h2 class="titulo" id="adornos">Qué trae el pase</h2>
-      <p class="seccion-texto">No se vende un adorno suelto. <span data-campo="precioVecino">4,99 €</span> es el pase entero. La etiqueta, el color y la frase llegan al cerrar el nivel 8.</p>
+      <p class="seccion-texto">No se vende un adorno suelto. <span data-campo="precioVecino">4,99 €</span> es el pase entero. La etiqueta, el color y la frase se reclaman en el nivel 8.</p>
       <div class="productos">
         <article class="producto">
           <img src="img/producto-etiqueta.jpg" alt="Personaje de bloques con gorra verde y una esmeralda en el pecho">
           <div class="carta-cuerpo">
             <p class="chip">Etiqueta</p>
             <h3>VIP, en verde</h3>
-            <p>Delante del nombre, en el chat, se lee VIP en verde oscuro. Es una palabra. No da objetos ni permisos.</p>
+            <p>Delante del nombre se lee [VIP] en verde, en el chat, en la lista de jugadores y encima de la cabeza. Si ya tienes un rango, va detrás de él. Es una palabra. No da objetos ni permisos.</p>
           </div>
         </article>
         <article class="producto">
@@ -155,9 +155,9 @@
     </article>
 
     <article class="hoja" id="pago">
-      <h2>Cómo se pagaría el pase</h2>
+      <h2>Cómo se paga el pase</h2>
       <p id="texto-sin-cobro" class="solo-sin-cobro">Cuando se pueda pagar, el cobro será en Tebex, una tienda externa. En esa página verás otra vez el precio total, con el IVA incluido, antes de confirmar. El botón de esta web solo te llevará allí.</p>
-      <p id="texto-con-cobro" class="solo-con-cobro" hidden>El pago se hace en Tebex, la tienda externa, no en esta página. El enlace abre esa tienda: allí ves otra vez el total, con el IVA incluido, antes de confirmar.</p>
+      <p id="texto-con-cobro" class="solo-con-cobro" hidden>El pago se hace en Tebex, la tienda externa, no en esta página. El enlace abre esa tienda: allí escribes tu nombre del juego y ves otra vez el total, con el IVA incluido, antes de confirmar. Ese nombre tiene que existir en Minecraft, con las mismas mayúsculas. El pase entra solo, aunque estés fuera. En el juego, Mejorar pase o /buy abre el mismo pago con tu nombre ya puesto.</p>
       <div class="hero-acciones solo-con-cobro" id="con-cobro" hidden>
         <a class="boton" href="" data-campo="tiendaUrl" data-campo-modo="solo-href">Comprar el pase</a>
       </div>

@@ -1,4 +1,16 @@
 /* Rellena [data-campo] desde IDENTIDAD. No hace falta para leer la página. */
+function esTebex(url) {
+  if (typeof url !== "string" || !/^https:\/\//.test(url)) {
+    return false;
+  }
+  var host = url.slice(8).split("/")[0].split(":")[0].toLowerCase();
+  if (host.endsWith(".")) {
+    host = host.slice(0, -1);
+  }
+  return host === "tebex.io" || host.slice(-9) === ".tebex.io"
+    || host === "tebex.store" || host.slice(-12) === ".tebex.store";
+}
+
 (function () {
   var datos = window.IDENTIDAD;
   if (!datos) {
@@ -22,13 +34,15 @@
     if (modo === "texto" || modo === "enlace") {
       nodo.textContent = valor;
     }
-    if ((modo === "enlace" || modo === "solo-href") && /^https:\/\//.test(valor)) {
+    if ((modo === "enlace" || modo === "solo-href") && esTebex(valor)) {
+      nodo.setAttribute("href", valor);
+    } else if ((modo === "enlace" || modo === "solo-href") && clave !== "tiendaUrl" && /^https:\/\//.test(valor)) {
       nodo.setAttribute("href", valor);
     }
   }
 
   var tienda = typeof datos.tiendaUrl === "string" ? datos.tiendaUrl.trim() : "";
-  var hayTienda = /^https:\/\//.test(tienda);
+  var hayTienda = esTebex(tienda);
   function marcar(nodo, oculto) {
     if (nodo) nodo.hidden = oculto;
   }
