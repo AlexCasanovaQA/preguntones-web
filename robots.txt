@@ -1,0 +1,4 @@
+# La carta (/carta/) lleva noindex en su HTML.
+# No se prohíbe aquí: el buscador tiene que poder leer esa orden.
+User-agent: *
+Allow: /
