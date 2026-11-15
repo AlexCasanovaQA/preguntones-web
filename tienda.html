@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tienda · Preguntones</title>
-  <meta name="description" content="En Preguntones hay dos tiendas. Dentro, el puesto, el cofre y la bandera se pagan con duros. En la web, el VIP cuesta 4,99 € con IVA y hoy no hay botón de pago.">
+  <meta name="description" content="En Preguntones hay dos tiendas. Dentro, el Mercado, el cofre, el Busco y la bandera se pagan con duros. En la web, el pase cuesta 4,99 € con IVA y hoy no hay botón de pago.">
   <meta name="theme-color" content="#07140e">
   <link rel="icon" href="img/marca.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,20 +30,20 @@
   <main id="contenido" class="envoltorio" tabindex="-1">
     <p class="kicker">Dos tiendas</p>
     <h1>Tienda de <span data-campo="nombre">Preguntones</span></h1>
-    <p class="entradilla">Jugar es gratis. Dentro del servidor se compra con duros. En esta página, el único precio en euros es un adorno, y hoy no hay botón de pago.</p>
+    <p class="entradilla">Jugar es gratis. Dentro del servidor se compra con duros. En esta página, el único precio en euros es el pase, y hoy no hay botón de pago.</p>
 
     <div class="caminos">
       <article class="camino camino-oro">
         <p class="kicker">Dentro del juego</p>
         <h2>Se paga con duros</h2>
-        <p>El puesto vende bloques para la casa. El cofre de tu parcela vende lo que tú metas. La bandera cuesta 40 duros y el banco presta los de la caja. Nada de esto se paga con euros.</p>
+        <p>El Mercado vende bloques para la casa y lo que pone cada jugador. El cofre y el Busco están en tu parcela. La bandera cuesta 40 duros y el banco presta los de la caja. Nada de esto se paga con euros.</p>
         <p><a class="boton boton-tienda" href="#duros">Ver la tienda de duros</a></p>
       </article>
       <article class="camino">
         <p class="kicker">En esta web</p>
-        <h2>Solo un adorno</h2>
-        <p>El paquete VIP cuesta <strong><span data-campo="precioVecino">4,99 €</span> con IVA</strong>. Cambia cómo te ves, no cómo juegas. Un adorno suelto no está a la venta. Esta página no cobra.</p>
-        <p><a class="boton boton-linea" href="#vip">Ver el paquete VIP</a></p>
+        <h2>Solo el pase</h2>
+        <p>El pase cuesta <strong><span data-campo="precioVecino">4,99 €</span> con IVA</strong>, una vez. Abre el camino de oro. El nombre verde llega al cerrar el nivel 8. Un adorno suelto no está a la venta. Esta página no cobra.</p>
+        <p><a class="boton boton-linea" href="#vip">Ver el pase</a></p>
       </article>
     </div>
 
@@ -55,29 +55,34 @@
       <p class="seccion-texto">Se abre con Escape, el botón dorado, o con el comando. Los duros salen de jugar y de venderle a otro jugador. Un euro no los fabrica.</p>
       <div class="fichas pares">
         <article class="ficha">
-          <p class="chip chip-oro">/puesto</p>
-          <h3>Bloques, luces y muebles</h3>
-          <p>Botón Tienda del panel. Hay luces, madera, piedra, color, cristal, plantas, tierra, Nether, End, cobre, mar, muebles y mecanismos. Es el atajo caro: talar sigue saliendo mejor. 32 troncos de roble cuestan 96 duros. Sus tablones, 24, porque un tronco da cuatro.</p>
+          <p class="chip chip-oro">Mercado</p>
+          <h3>Bloques, luces y lo de cada uno</h3>
+          <p>Botón Mercado del panel, o <strong>/mercado</strong>. El barrio vende luces, madera, piedra, cristal, muebles y un poco de comida y hierro, más caro que hacerlo tú. 32 troncos de roble cuestan 48 duros. Sus tablones, 12. La ficha de aldeano, 40, hasta 8 por persona. Entre jugadores, un montón va de 1 a 48 la unidad y una compra no pasa de 96. Una pieza se vende entera, de 1 a 500. El barrio se queda el 10 %.</p>
         </article>
         <article class="ficha">
           <p class="chip">Cofre de venta</p>
           <h3>Lo que metas, se vende</h3>
-          <p>Arriba: oro, cofre, oro. Abajo: oro, cartel, oro. Vale cualquier cartel que no sea colgante. Solo en una parcela tuya, hasta cuatro. Shift y clic para meter género y escribir el precio, de 1 a 500 duros por unidad. Cualquier otro clic abre la compra. El barrio se queda el 10 %, redondeado hacia abajo. Encima se lee quién vende y cuántas cosas tienen precio.</p>
+          <p>Arriba: oro, cofre, oro. Abajo: oro, cartel, oro. Vale cualquier cartel que no sea colgante. Solo en una parcela tuya, hasta cuatro. Shift y clic para meter género y escribir el precio, de 1 a 48 duros por unidad. Una compra no pasa de 96. Cualquier otro clic abre la compra. El barrio se queda el 10 %, redondeado hacia abajo. Encima se lee quién vende y cuántas cosas tienen precio.</p>
+        </article>
+        <article class="ficha">
+          <p class="chip">Busco</p>
+          <h3>Pides lo que te falta</h3>
+          <p>La misma receta, con un barril en vez del cofre. Se busca «Busco». Hasta cuatro por parcela. Escribes el nombre entero, cuántos (de 1 a 64) y los duros (de 1 a 96). Esos duros salen al publicarlo. Quien deja el género, entero o en parte, se lleva el 90 %. Lo entregado espera en el barril.</p>
         </article>
         <article class="ficha">
           <p class="chip chip-cielo">Bandera</p>
           <h3>40 duros, hasta cinco</h3>
-          <p>Botón Bandera del panel, o <strong>/bandera</strong>. La pones donde construyas y sale en Spawn. En el barrio se queda. Fuera, se borra cuando se borra ese mundo.</p>
+          <p>Botón Bandera del panel, o <strong>/bandera</strong>. La pones donde construyas y sale en Spawn. En el barrio se queda. Fuera, al borrarse ese mundo, vuelve a ti. No hay /sethome.</p>
         </article>
         <article class="ficha">
           <p class="chip chip-oro">Banco</p>
           <h3>Un préstamo, con contrato</h3>
-          <p>Botón Banco, o <strong>/banco</strong>. Presta lo que haya en la caja, no fabrica duros. 1 día al 10 %, 3 días al 20 %, 7 días al 30 %. El interés se enseña antes de aceptar y, al pagarlo, se destruye. Hasta 50 duros, si no pagas, se cobra de tu saldo. Más de 50, dejas una parcela de aval.</p>
+          <p>El aldeano Banco, en el spawn, o <strong>/banco</strong>. Escribes cuántos duros, hasta 100. Si la caja tiene menos, ese es el tope. No fabrica duros. 1 día al 10 %, 3 días al 20 %, 7 días al 30 %. El interés se enseña antes de aceptar y, al pagarlo, se destruye. Hasta 50 duros, si no pagas, se cobra de tu saldo. Más de 50, dejas una parcela de aval.</p>
         </article>
       </div>
       <article class="hoja">
         <h2>El pack del cofre</h2>
-        <p>Al entrar, el juego puede pedir un pack de recursos. Dibuja el cofre de venta. Si lo rechazas, ves un barril con el rótulo «Venta» y puedes comprar igual. También se puede <a href="pack/cofre-venta.zip">bajar el pack</a> y meterlo a mano en el lanzador.</p>
+        <p>Al conectar, el juego pide un pack de recursos. Hay que aceptarlo: si no, no entras. Dibuja el cofre de venta. El archivo de esta página lleva también el tablero del pase, el Busco y el reciclador. Si al entrar las medallas salen como los objetos de siempre, el premio entra igual. También se puede <a href="pack/cofre-venta.zip">bajar el pack</a> y meterlo a mano en el lanzador.</p>
       </article>
     </section>
 
@@ -85,27 +90,28 @@
       <img src="img/producto-vecino.jpg" alt="Personaje de bloques con gorra verde, junto a un cofre con un casco, un pergamino, una poción y una chispa">
       <div class="oferta-cuerpo">
         <p class="kicker">Un solo paquete</p>
-        <h2>VIP</h2>
+        <h2>El pase</h2>
         <p class="precio"><span data-campo="precioVecino">4,99 €</span></p>
-        <p class="precio-nota">IVA incluido. Se paga una vez. No es una cuota. Dura mientras el servidor exista.</p>
-        <p>Lleva la etiqueta <strong>VIP</strong> en verde oscuro, el nombre de ese color y la frase «entra al barrio» al entrar. No da fuerza, vida, duros, terreno ni ventaja en la XO del sábado.</p>
+        <p class="precio-nota">IVA incluido. Se paga una vez. No es una cuota. El camino de oro se queda.</p>
+        <p>Abre el camino de pago del pase, junto al aldeano del spawn. El nombre verde, la etiqueta <strong>VIP</strong> y la frase «entra al barrio» llegan al cerrar el nivel 8, con el pase ya pagado. No da fuerza, vida, duros, terreno ni ventaja en la XO del sábado.</p>
         <ul>
-          <li>Etiqueta verde delante del nombre, en el chat.</li>
+          <li>El camino de oro, con títulos y la estela, según el nivel.</li>
+          <li>Al cerrar el 8: etiqueta verde delante del nombre.</li>
           <li>El nombre en ese mismo verde.</li>
           <li>La frase «entra al barrio» cuando entras.</li>
-          <li>El rastro queda guardado. Hoy no se pinta en el juego y no da vuelo.</li>
+          <li>La estela se pinta al caminar. Dorada desde el nivel 4 y verde con el VIP. No da vuelo.</li>
         </ul>
         <div class="hero-acciones">
-          <a class="boton solo-con-cobro" hidden href="" data-campo="tiendaUrl" data-campo-modo="solo-href">Comprar VIP</a>
+          <a class="boton solo-con-cobro" hidden href="" data-campo="tiendaUrl" data-campo-modo="solo-href">Comprar el pase</a>
         </div>
         <p class="placa solo-sin-cobro" id="sin-cobro">Hoy no hay botón de pago. Esta página no cobra y no te manda a ningún sitio para pagar.</p>
       </div>
     </article>
 
     <section class="seccion" aria-labelledby="adornos">
-      <p class="kicker">Dentro de VIP</p>
-      <h2 class="titulo" id="adornos">Los cuatro van juntos.</h2>
-      <p class="seccion-texto">No se vende un adorno suelto. <span data-campo="precioVecino">4,99 €</span> es el total del paquete, no el precio de una pieza.</p>
+      <p class="kicker">Al cerrar el 8</p>
+      <h2 class="titulo" id="adornos">El VIP va junto.</h2>
+      <p class="seccion-texto">No se vende un adorno suelto. <span data-campo="precioVecino">4,99 €</span> es el pase entero. La etiqueta, el color y la frase llegan al cerrar el nivel 8.</p>
       <div class="productos">
         <article class="producto">
           <img src="img/producto-etiqueta.jpg" alt="Personaje de bloques con gorra verde y una esmeralda en el pecho">
@@ -136,7 +142,7 @@
           <div class="carta-cuerpo">
             <p class="chip">Rastro</p>
             <h3>Chispas al caminar</h3>
-            <p>El dibujo enseña el rastro. El paquete lo guarda, pero hoy no se pinta en el juego. No da vuelo ni velocidad.</p>
+            <p>Unas chispas al caminar. Doradas en el camino de pago y verdes con el VIP. No da vuelo ni velocidad.</p>
           </div>
         </article>
       </div>
@@ -159,11 +165,11 @@
     </article>
 
     <article class="hoja" id="pago">
-      <h2>Cómo se pagaría el VIP</h2>
+      <h2>Cómo se pagaría el pase</h2>
       <p id="texto-sin-cobro" class="solo-sin-cobro">Cuando se pueda pagar, el cobro será en Tebex, una tienda externa. En esa página verás otra vez el precio total, con el IVA incluido, antes de confirmar. El botón de esta web solo te llevará allí.</p>
       <p id="texto-con-cobro" class="solo-con-cobro" hidden>El pago se hace en Tebex, la tienda externa, no en esta página. El enlace abre esa tienda: allí ves otra vez el total, con el IVA incluido, antes de confirmar.</p>
       <div class="hero-acciones solo-con-cobro" id="con-cobro" hidden>
-        <a class="boton" href="" data-campo="tiendaUrl" data-campo-modo="solo-href">Comprar VIP</a>
+        <a class="boton" href="" data-campo="tiendaUrl" data-campo-modo="solo-href">Comprar el pase</a>
       </div>
       <p>El aviso de la compra, la entrega y la devolución se hacen en el Discord, canal soporte.</p>
       <p>Tienes 14 días para echarte atrás y pedir el dinero de vuelta. En un adorno digital, ese derecho solo se pierde si pides que te lo activemos ya y te lo confirmamos por escrito. El detalle está en las <a href="condiciones.html">condiciones de compra</a>. Los datos, en <a href="privacidad.html">privacidad</a>.</p>

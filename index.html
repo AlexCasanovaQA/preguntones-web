@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Preguntones: un servidor de Minecraft</title>
-  <meta name="description" content="Servidor de Minecraft Java 26.1.2. Una parcela, un cofre para vender y el sábado a las 21:30 (hora de Madrid) la XO. Dirección: play.preguntones.es. Jugar es gratis.">
+  <meta name="description" content="Servidor de Minecraft Java 26.1.2. Una parcela, un cofre para vender y el sábado a las 21:30 (hora de Madrid) la XO. Dirección: play.preguntones.es. Sin cuenta de Minecraft. Jugar es gratis.">
   <meta name="theme-color" content="#07140e">
   <link rel="icon" href="img/marca.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,9 +34,9 @@
       <div class="emblema">
         <img src="img/marca.jpg" alt="">
       </div>
-      <p class="estado"><span class="punto" aria-hidden="true"></span> Minecraft Java · <span data-campo="version">26.1.2</span> · jugar es gratis</p>
+      <p class="estado"><span class="punto" aria-hidden="true"></span> Minecraft Java · <span data-campo="version">26.1.2</span> · sin cuenta de Minecraft</p>
       <h1 id="titulo">¿Estás<br><span class="brillo">preguntón?</span></h1>
-      <p class="entradilla">Preguntones es un servidor de Minecraft Java: un barrio en supervivencia. Marcas un terreno, construyes con más gente y vendes lo que haces desde tu parcela. El <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>, se juega la XO. Jugar es gratis.</p>
+      <p class="entradilla">Preguntones es un servidor de Minecraft Java: un barrio en supervivencia. Marcas un terreno, construyes con más gente y vendes lo que haces desde tu parcela. El <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>, se juega la XO. No hace falta cuenta de Minecraft. Discord y una contraseña del servidor, sí. Jugar es gratis.</p>
       <div class="portada-acciones">
         <button class="ip-capsula" id="copiar-ip" type="button" data-copiar-ip>
           <span class="ip-icono" aria-hidden="true"></span>
@@ -61,7 +61,7 @@
           <div class="carta-cuerpo">
             <p class="chip">Terreno</p>
             <h3>Tu parcela</h3>
-            <p>Al entrar te dan una pala de oro. Clic derecho en un bloque de una parcela libre: si puedes pagarla, la parcela entera es tuya. El borde amarillo marca el tamaño. La puerta se abre; cofres y hornos, no. Con <strong>/parcela amigo</strong> invitas a quien esté conectado para que construya contigo. El camino entre dos casas es de todos hasta que los dos lados son tuyos.</p>
+            <p>Al entrar te dan una pala de oro. Clic derecho en un bloque de una parcela libre: si puedes pagarla, la parcela entera es tuya. El borde amarillo marca el tamaño. La puerta se abre, también la de hierro. Cofres y hornos, solo si es tuya o te han invitado. Con <strong>/parcela amigo</strong> invitas a quien esté conectado para que construya contigo. El camino entre dos casas es de todos hasta que los dos lados son tuyos.</p>
           </div>
         </article>
         <article class="carta">
@@ -69,7 +69,7 @@
           <div class="carta-cuerpo">
             <p class="chip chip-oro">Sábado</p>
             <h3>La XO</h3>
-            <p>El <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>, hasta las 22:30. En Canarias, una hora menos. Si está abierta, se entra desde el Panel Preguntones: Escape y el botón dorado de abajo. X es falso y O es verdadero. Tienes 15 segundos para leerla y colocarte. Se te ve, y los golpes no cuentan. 4 duros por persona: se los lleva quien gana la ronda.</p>
+            <p>El <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>. En Canarias, una hora menos. Una sola pasada, de menos a más difícil, y al acabar se cierra. Si está abierta, se entra con el aldeano Eventos, en el spawn, o con /menu xo. X es falso y O es verdadero. Tienes 15 segundos para leerla y colocarte. Se te ve, y los golpes no cuentan. 8 duros al que queda. El bingo lo abre el mismo aldeano cuando hay sesión: no es la cita del sábado, dura una hora y, al llenar la carta, son 12 duros.</p>
           </div>
         </article>
         <article class="carta">
@@ -77,7 +77,7 @@
           <div class="carta-cuerpo">
             <p class="chip chip-cielo">Para entrar</p>
             <h3>Qué necesitas</h3>
-            <p>Minecraft Java <strong data-campo="version">26.1.2</strong>, el de ordenador y de pago. Consola, móvil y la versión de la Microsoft Store hoy no entran. El Discord es el tablón de avisos: se juega igual sin estar.</p>
+            <p>El cliente Java <strong data-campo="version">26.1.2</strong>, el de ordenador. La cuenta de Minecraft no hace falta. Consola, móvil y la versión de la Microsoft Store no entran. Al conectar, la ventana pide vincular Discord y una contraseña solo para este servidor.</p>
           </div>
         </article>
       </div>
@@ -89,34 +89,39 @@
       <p class="seccion-texto">Con euros no se compra terreno ni moneda. Lo que se vende dentro se paga en duros. El detalle de cada sitio está en la <a href="tienda.html">tienda</a>.</p>
       <div class="fichas">
         <article class="ficha">
-          <p class="chip chip-oro">Puesto</p>
+          <p class="chip chip-oro">Mercado</p>
           <h3>Bloques para la casa</h3>
-          <p>En el panel, botón Tienda, o con <strong>/puesto</strong>. Luces, madera, piedra, cristal, muebles y mecanismos. Es el atajo caro: talar sigue saliendo mejor. 32 troncos de roble cuestan 96 duros; sus tablones, 24.</p>
+          <p>En el panel, botón Mercado, o con <strong>/mercado</strong>. El barrio vende luces, madera, piedra, cristal, muebles y un poco de comida y hierro liso, más caro que hacerlo tú. 32 troncos de roble cuestan 48 duros; sus tablones, 12. La ficha de aldeano cuesta 40, y cada persona puede tener 8. Entre jugadores, un montón va de 1 a 48 la unidad y una compra no pasa de 96. Una pieza —arma, armadura, herramienta o algo con nombre, encanto o más— se vende entera, hasta 500. El barrio se queda el 10 %.</p>
         </article>
         <article class="ficha">
           <p class="chip">Cofre</p>
           <h3>Vendes lo tuyo</h3>
-          <p>Arriba: oro, cofre, oro. Abajo: oro, cartel, oro. Vale cualquier cartel que no sea colgante. Solo en tu parcela, hasta cuatro. Tú pones el precio por unidad. Quien compra elige la cantidad. El barrio se queda el 10 %.</p>
+          <p>Arriba: oro, cofre, oro. Abajo: oro, cartel, oro. Vale cualquier cartel que no sea colgante. Solo en tu parcela, hasta cuatro. El precio va de 1 a 48 duros por unidad y una compra no pasa de 96. El barrio se queda el 10 %.</p>
+        </article>
+        <article class="ficha">
+          <p class="chip">Pedido</p>
+          <h3>El Busco</h3>
+          <p>La misma receta, con un barril en vez del cofre. Se busca «Busco». Hasta cuatro por parcela, aparte de los cofres. Escribes el nombre entero, cuántos (de 1 a 64) y los duros (de 1 a 96). Esos duros salen al publicarlo. Quien deja el género se lleva el 90 %. En Parcelas, Busco lista los pedidos y te lleva junto al barril.</p>
         </article>
         <article class="ficha">
           <p class="chip chip-oro">Banco</p>
           <h3>Pedir prestado</h3>
-          <p>Botón Banco del panel, o <strong>/banco</strong>. Presta lo que haya en la caja del barrio. 1 día al 10 %, 3 días al 20 %, 7 días al 30 %. Hasta 50 duros, si no pagas, te los cobra del saldo. Más de 50, dejas una parcela de aval.</p>
+          <p>El aldeano Banco, en el spawn, o <strong>/banco</strong>. Escribes cuántos duros, hasta 100. Si la caja tiene menos, ese es el tope. 1 día al 10 %, 3 días al 20 %, 7 días al 30 %. Hasta 50 duros, si no pagas, te los cobra del saldo. Más de 50, dejas una parcela de aval.</p>
         </article>
         <article class="ficha">
           <p class="chip chip-cielo">Viaje</p>
           <h3>La bandera</h3>
-          <p>40 duros, en el panel. La pones donde construyas y aparece en Spawn. Hasta cinco. En el barrio se queda. En el survival, el Nether o el End se va cuando ese mundo se borra.</p>
+          <p>40 duros, en el panel. La pones donde construyas y aparece en Spawn. Hasta cinco. Es el sitio al que vuelves: no hay /sethome. En el barrio se queda. En el survival, el Nether o el End, al borrarse ese mundo, vuelve a ti.</p>
         </article>
         <article class="ficha">
           <p class="chip">Gente</p>
-          <h3>El clan</h3>
-          <p>Hasta 8 personas, con <strong>/clan crear</strong>. No da más parcelas: sigues con seis. La voz del clan es opcional. Se juega igual sin Discord.</p>
+          <h3>El grupo</h3>
+          <p>Hasta 4. Clic derecho a quien esté cerca, e Invitar al grupo. El nombre y la vida salen en el marcador, arriba a la derecha, solo con texto. En la ventana se ve la cabeza. El clan es otra cosa: hasta 8 con <strong>/clan crear</strong>, y sigues con seis parcelas.</p>
         </article>
         <article class="ficha">
           <p class="chip chip-oro">Pelea</p>
           <h3>El PVP</h3>
-          <p>Los tres primeros días no puedes golpear a otro jugador. Luego, en el panel, activas el modo agresivo. El duelo se reta ahí: tarda 15 segundos, no toca el karma ni los objetos, y en la XO no hay. Junto al nombre se lee Bueno, Normal, Malo o Cruel.</p>
+          <p>Los tres primeros días no puedes golpear a otro jugador. Luego, en Escape, botón Ajustes, enciendes el modo agresivo. El duelo es clic derecho a quien esté cerca: tarda 5 segundos, en la arena hay diamante y escudo, el karma no cambia, y en la XO no hay. Junto al nombre se lee Bueno, Normal, Malo o Cruel.</p>
         </article>
       </div>
     </section>
@@ -128,7 +133,7 @@
         <article class="motivo">
           <p class="sello" aria-hidden="true">01</p>
           <h3>Tu casa se queda</h3>
-          <p>El barrio se queda. A las 05:00, hora de Madrid, el servidor se reinicia un momento y no borra las parcelas. El survival es otro mundo y se borra 48 horas después de que un grupo mate al dragón. El primer ciclo abre el End el día 14, con 12 blazes de ese ciclo. El segundo pide también un bastión y una ciudad ancestral. Desde el tercero se turnan: la ciudad, y al siguiente el bastión. En la pelea no valen las explosiones ni los élitros. Hasta cuatro. Quien esté conectado se lleva 20 duros y el rango Cazador.</p>
+          <p>El barrio se queda. A las 05:00, hora de Madrid, el servidor se reinicia un momento y no borra las parcelas. El survival es otro mundo y se borra 48 horas después de que un grupo mate al dragón. El primer ciclo abre el End el día 14, con 12 blazes de ese ciclo. El segundo pide también un bastión y una ciudad ancestral. Desde el tercero se turnan: la ciudad, y al siguiente el bastión. En la pelea no valen las explosiones ni los élitros. Hasta cuatro. Quien esté conectado y haya pasado la puerta se queda el rango Cazador. Si el ciclo ya le paga, suma 12 duros.</p>
         </article>
         <article class="motivo">
           <p class="sello sello-oro" aria-hidden="true">02</p>
@@ -138,7 +143,7 @@
         <article class="motivo">
           <p class="sello sello-cielo" aria-hidden="true">03</p>
           <h3>Dos tiendas distintas</h3>
-          <p>Dentro, el puesto, el cofre y la bandera se pagan con duros. En esta web, el paquete VIP cuesta <strong><span data-campo="precioVecino">4,99 €</span> con IVA</strong> y solo cambia cómo te ves. Hoy esa página no cobra.</p>
+          <p>Dentro, el Mercado, el cofre, el Busco y la bandera se pagan con duros. En esta web, el pase cuesta <strong><span data-campo="precioVecino">4,99 €</span> con IVA</strong>, una vez. Abre el camino de oro. El nombre verde llega al cerrar el nivel 8. Hoy esa página no cobra.</p>
         </article>
         <article class="motivo">
           <p class="sello" aria-hidden="true">04</p>
@@ -157,31 +162,35 @@
           <dl class="datos">
             <div>
               <dt>Duros</dt>
-              <dd>La moneda del barrio. Entras con 25 y el tope es 2000. La primera parcela cuesta 25. Luego 55, 95, 145, 205 y 275. Hasta seis. También salen de las misiones del survival —<strong>/ciclo</strong> enseña el avance— y de venderle a otro jugador. Un euro no los fabrica, y no valen fuera de este servidor.</dd>
+              <dd>La moneda del barrio. Entras sin duros y el tope es 2000. La primera parcela cuesta 25. Luego 55, 95, 145, 205 y 275. Hasta seis. Salen del pase del spawn, de las misiones del survival —<strong>/ciclo</strong> enseña el avance: un ciclo completo son 106, y el dragón 12—, de los progresos del juego y de venderle a otro jugador. Una tarea da 1 duro, un objetivo 3 y un reto 8, una vez por persona. La XO paga 8 a quien queda. El bingo, si hay sesión, paga 12 al llenar la carta. <strong>/invitar</strong> da 100, una vez, si esa persona entra a Discord con tu enlace y luego a Minecraft. Un euro no los fabrica, y no valen fuera de este servidor.</dd>
             </div>
             <div>
               <dt>Terreno</dt>
-              <dd>Una parcela del barrio, igual que las demás. La pala de oro sobre un bloque libre la compra entera, si tienes duros. Puedes tener hasta seis, también dentro de un clan. El camino entre dos se queda de todos hasta que los dos lados son tuyos. La puerta se abre. Cofres, hornos y el resto, no.</dd>
+              <dd>Una parcela del barrio, igual que las demás. La pala de oro sobre un bloque libre la compra entera, si tienes duros. Puedes tener hasta seis, también dentro de un clan. El camino entre dos se queda de todos hasta que los dos lados son tuyos. La puerta se abre. Cofres y hornos, solo el dueño y quien esté invitado. Dentro, <strong>/parcela vender</strong> la deja entre 20 y 275 duros. Al banco, estando dentro, paga la quinta parte de lo que costó. En Parcelas, De visita lista las casas y A la venta busca el género de los cofres. El prestigio vacía lo construido y la tierra sigue a tu nombre.</dd>
             </div>
             <div>
               <dt>Panel</dt>
-              <dd>Escape, el botón dorado de abajo, o <strong>/menu</strong>. Ahí están Spawn, ir junto a un jugador, el survival, la XO, el PVP, la tienda de bloques, la bandera y el banco. Volver tarda 15 segundos y se cancela en lava, si te ahogas o si te atacan.</dd>
+              <dd>Escape, el botón dorado de abajo, o <strong>/menu</strong>. Ahí están Spawn, Jugador, Survival, Parcelas, Mercado y Bandera. En Parcelas están A la mía, De visita, A la venta y Busco. Al lado, Ajustes es el modo agresivo. El grupo y el duelo son clic derecho a quien esté cerca. El préstamo, la XO y el bingo no están en ese panel: los abren los aldeanos del spawn. Volver tarda 5 segundos y se cancela en lava, si te ahogas o si te atacan.</dd>
             </div>
             <div>
               <dt>La XO</dt>
-              <dd>La cita del <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>, hasta las 22:30 (en Canarias, una hora menos). Si está abierta, se entra desde el Panel Preguntones. X es falso y O es verdadero. 15 segundos para colocarte. Hacen falta dos. 4 duros por persona: se los lleva quien gana la ronda.</dd>
+              <dd>La cita del <span data-campo="cita">sábado a las 21:30, hora de Madrid</span> (en Canarias, una hora menos). Una sola pasada. Si está abierta, se entra con el aldeano Eventos, en el spawn, o con /menu xo. X es falso y O es verdadero. 15 segundos para colocarte. Hacen falta dos. 8 duros al que queda.</dd>
             </div>
             <div>
               <dt>Cofre de venta</dt>
-              <dd>Un bloque de tu parcela. Metes género, le pones un precio por unidad y quien pase compra la cantidad. El barrio se queda el 10 %. Sin el pack de recursos se ve un barril con el rótulo «Venta» y se compra igual.</dd>
+              <dd>Un bloque de tu parcela. Metes género, le pones un precio por unidad, de 1 a 48, y quien pase compra la cantidad. Una compra no pasa de 96. El barrio se queda el 10 %. El pack del servidor lo dibuja. Hay que aceptarlo: si no, no entras.</dd>
+            </div>
+            <div>
+              <dt>Busco</dt>
+              <dd>El pedido de tu parcela. Se craftea como el cofre, con un barril en vez del cofre. Escribes el nombre entero, cuántos (de 1 a 64) y los duros (de 1 a 96). Esos duros salen al publicarlo. Quien entrega se lleva el 90 %. Hasta cuatro por parcela. En Parcelas, Busco te lleva junto al barril.</dd>
             </div>
             <div>
               <dt>Banco</dt>
-              <dd>Préstamo de la caja del barrio, desde el panel. El interés se acepta antes: 10 %, 20 % o 30 % según el plazo. No se fabrica moneda: si la caja está vacía, no hay préstamo.</dd>
+              <dd>Préstamo de la caja del barrio. Lo abre el aldeano Banco, en el spawn. Se escribe la cantidad, hasta 100 duros, o menos si la caja no llega. El interés se acepta antes: 10 %, 20 % o 30 % según el plazo. No se fabrica moneda: si la caja está vacía, no hay préstamo.</dd>
             </div>
             <div>
               <dt>El End</dt>
-              <dd>El primer ciclo abre el día 14, con 12 blazes de ese ciclo. El segundo pide también un bastión y una ciudad ancestral. Desde el tercero se turnan: la ciudad, y al siguiente el bastión. En la pelea no valen las explosiones ni los élitros. Hasta cuatro, con /grupo. Quien esté conectado se lleva 20 duros y el rango Cazador. 48 horas después, ese mundo se borra. El barrio no.</dd>
+              <dd>El primer ciclo abre el día 14, con 12 blazes de ese ciclo. El segundo pide también un bastión y una ciudad ancestral. Desde el tercero se turnan: la ciudad, y al siguiente el bastión. En la pelea no valen las explosiones ni los élitros. Hasta cuatro, con /grupo. Quien esté conectado y haya pasado la puerta se queda el rango Cazador. Si el ciclo ya le paga, suma 12 duros. 48 horas después, ese mundo se borra. El barrio no.</dd>
             </div>
             <div>
               <dt>Título</dt>
@@ -193,7 +202,51 @@
             </div>
             <div>
               <dt>Java</dt>
-              <dd>El Minecraft de ordenador, el de pago, en la versión <span data-campo="version">26.1.2</span>. El número tiene que coincidir o el servidor no te deja entrar.</dd>
+              <dd>El Minecraft de ordenador, en la versión <span data-campo="version">26.1.2</span>. No hace falta cuenta de Minecraft: el servidor no la comprueba. El número de versión tiene que coincidir.</dd>
+            </div>
+            <div>
+              <dt>Contraseña</dt>
+              <dd>La que inventas en la ventana, solo para Preguntones. No es la de Microsoft. Si se olvida, el código llega por privado al Discord vinculado.</dd>
+            </div>
+            <div>
+              <dt>Grupo</dt>
+              <dd>Hasta 4 personas. Clic derecho a quien esté cerca, e Invitar al grupo. <strong>/grupo</strong> enseña las cabezas y sirve para salir. El nombre y la vida salen en el marcador, arriba a la derecha. Al cazar el dragón, quien esté conectado y haya pasado la puerta se queda el rango Cazador. Si el ciclo ya le paga, suma 12 duros. El clan cabe a 8 y no da más parcelas.</dd>
+            </div>
+            <div>
+              <dt>Muerte</dt>
+              <dd>Al reaparecer, la pantalla ofrece volver al sitio de la muerte por la mitad de lo que llevabas, entre 16 y 192 duros. Se extraen al llegar. Tarda 5 segundos y sirve una vez. Si se rechaza, <strong>/back</strong> lo deja para cualquier momento. Una muerte del duelo o de la XO no se guarda. La tumba guarda los objetos.</dd>
+            </div>
+            <div>
+              <dt>Lupa</dt>
+              <dd>Está en la esquina de abajo del inventario, al pulsar E. También vale <strong>/buscar</strong>. Busca en lo que llevas y en los cofres de tus parcelas. No saca lo de otra persona.</dd>
+            </div>
+            <div>
+              <dt>Guía</dt>
+              <dd>La bibliotecaria del spawn. Un clic explica el barrio, la parcela, los duros, moverse y la gente. <strong>/guia</strong> abre lo mismo solo a su lado. El Herrero sube la pieza de +0 a +9. Pase abre el camino gratis y el de pago. Banco presta duros. Eventos abre la XO y el bingo. Prestigio, el armero, es para quien ha cazado al dragón.</dd>
+            </div>
+            <div>
+              <dt>Pase</dt>
+              <dd>El cartógrafo del spawn, o <strong>/pase</strong> a su lado. Son 8 niveles, en orden. El camino gratis paga duros y experiencia al cerrar cada uno. El de pago cuesta <span data-campo="precioVecino">4,99 €</span> con IVA, una vez, y no da duros: da títulos, la estela y, al cerrar el 8, el VIP. Hoy esta web no cobra.</dd>
+            </div>
+            <div>
+              <dt>Bingo</dt>
+              <dd>Lo abre el aldeano Eventos cuando hay sesión, o <strong>/bingo</strong>. No es la cita del sábado. Dura una hora. La carta tiene 9 casillas. Al llenarla, 12 duros, una vez en esa sesión.</dd>
+            </div>
+            <div>
+              <dt>Prestigio</dt>
+              <dd>El armero del spawn, o <strong>/prestigio</strong> a su lado. Hace falta haber cazado al dragón, tú o tu grupo, y no tener un préstamo abierto. Hay que confirmar dos veces. Se van los objetos, los duros, el karma y lo construido en tus parcelas. La tierra sigue a tu nombre, hasta seis. A cambio, un corazón más por nivel, hasta trece en el III, y un punto de suerte. El pase de pago y el VIP se quedan. El rango Cazador se gasta.</dd>
+            </div>
+            <div>
+              <dt>Piedra</dt>
+              <dd>En el survival, en su Nether y en el End, cada 20 minutos puede caer una piedra. Al golpearla salen monstruos. Al romperla, desaparecen y el botín queda en el suelo. En el barrio, la XO y el duelo no cae.</dd>
+            </div>
+            <div>
+              <dt>Reciclador</dt>
+              <dd>Se craftea en Construcción: tablas alrededor, la mesa de trabajo en el centro y roca abajo. Lo que ya no quieres vuelve como material, siempre menos de lo que costó. Un encantamiento no vuelve.</dd>
+            </div>
+            <div>
+              <dt>Fuego</dt>
+              <dd>En el survival, en su Nether y en el End, el mechero enciende y la madera arde. En el barrio, la XO y el duelo, el mechero no prende.</dd>
             </div>
             <div>
               <dt>Bedrock</dt>
@@ -201,7 +254,7 @@
             </div>
             <div>
               <dt>Discord</dt>
-              <dd>El tablón: avisos, ayuda y la voz del sábado (sala voz-sabado). No hace falta un rol ni estar en Discord para jugar.</dd>
+              <dd>Hace falta para entrar. En la ventana, antes del mundo, se vincula. Por ahí llega el código de recuperación. La voz del sábado es la sala voz-sabado.</dd>
             </div>
           </dl>
         </article>
@@ -211,7 +264,7 @@
     <section class="cierre" aria-labelledby="listo">
       <p class="kicker">Multijugador</p>
       <h2 class="titulo" id="listo">Ya puedes entrar</h2>
-      <p class="entradilla">Abre Minecraft Java, copia la dirección y pégala en Multijugador, en Dirección del servidor. Si es tu primera vez, la guía va paso a paso.</p>
+      <p class="entradilla">Abre el cliente Java <span data-campo="version">26.1.2</span>, copia la dirección y pégala en Multijugador. La primera vez, la ventana pide Discord y una contraseña. La guía va paso a paso.</p>
       <div class="portada-acciones">
         <button class="ip-capsula" type="button" data-copiar-ip>
           <span class="ip-icono" aria-hidden="true"></span>
