@@ -497,6 +497,23 @@ main.envoltorio {
   margin-top: 3.2rem;
 }
 
+.trailer {
+  margin: 1.15rem 0 0;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid var(--linea);
+  background: #04110c;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+}
+
+.trailer video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #04110c;
+}
+
 .seccion-texto {
   max-width: 40rem;
   margin-top: 0.4rem;
