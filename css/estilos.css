@@ -987,7 +987,6 @@ main.envoltorio {
     grid-template-columns: 1.3fr 0.8fr 0.7fr;
   }
 
-  .votos-lista,
   .motivos,
   .rejilla,
   .fichas,
@@ -1449,6 +1448,10 @@ ul.etiquetas {
 }
 
 @media (min-width: 760px) {
+  .votos-lista {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .pasos-foto:not(.grande),
   .aldeanos {
     grid-template-columns: 1fr 1fr;

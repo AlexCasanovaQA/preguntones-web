@@ -7,6 +7,10 @@
     version: "26.1.2",
     discord: "https://discord.gg/ZjcnvSkqsQ",
     tiendaUrl: "https://preguntones.tebex.store/package/7805453",
+    tiendaZorro: "https://preguntones.tebex.store/",
+    tiendaCorcel: "https://preguntones.tebex.store/",
+    tiendaDromedario: "https://preguntones.tebex.store/",
+    tiendaGhast: "https://preguntones.tebex.store/",
     precioVecino: "4,99 €",
     cita: "sábado a las 21:30, hora de Madrid"
   };
