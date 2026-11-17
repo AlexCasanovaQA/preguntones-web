@@ -536,7 +536,12 @@ main.envoltorio {
 }
 
 .voto h3 {
+  margin: 0 0 0.35rem;
+}
+
+.voto p {
   margin: 0 0 0.8rem;
+  color: #b7cfc2;
 }
 
 .voto .boton {
