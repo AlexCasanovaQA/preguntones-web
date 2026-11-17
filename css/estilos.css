@@ -441,6 +441,10 @@ main > .entradilla {
   color: #fff;
 }
 
+.boton + .boton-linea {
+  margin-left: 0.55rem;
+}
+
 .boton-tienda,
 .boton-linea {
   background: rgba(8, 14, 10, 0.4);
