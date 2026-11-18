@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El plano del barrio · Preguntones</title>
+  <meta name="description" content="Plano del barrio de Preguntones: parcelas libres, reservadas o en venta, los edificios de la plaza y las casas de quien ha pedido salir.">
+  <meta name="theme-color" content="#07140e">
+  <link rel="icon" href="img/marca.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+    <div class="envoltorio barra">
+      <a class="marca" href="index.html"><span data-campo="nombre">Preguntones</span></a>
+      <button class="menu-abrir" type="button" aria-expanded="false" aria-controls="menu-principal"><span class="cuando-cerrado">Menú</span><span class="cuando-abierto">Cerrar</span></button>
+      <nav class="menu" id="menu-principal" aria-label="Principal">
+        <a href="index.html">Inicio</a>
+        <a href="entrar.html">Cómo entrar</a>
+        <a href="plano.html" aria-current="page">El plano</a>
+        <a href="normas.html">Normas</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" class="envoltorio" tabindex="-1">
+    <p class="kicker">El barrio</p>
+    <h1>El plano del barrio</h1>
+    <p class="entradilla">Aquí se ve qué parcela está libre, reservada o en venta, y los edificios de la plaza. Una casa sale con nombre solo si esa persona lo ha pedido en el juego.</p>
+    <p class="seccion-texto">No hace falta un mod. No es una foto del terreno: es la cuadrícula. El norte queda arriba. En el juego, <strong>/parcela plano</strong> enseña tu nombre y el título, y el mismo comando lo quita.</p>
+
+    <div class="plano-herramientas">
+      <form class="plano-buscar" role="search">
+        <label for="plano-q">Buscar una casa o un edificio</label>
+        <input id="plano-q" type="search" maxlength="32" autocomplete="off" placeholder="Un nombre o un título">
+      </form>
+      <div class="plano-filtros" role="group" aria-label="Filtrar parcelas">
+        <button type="button" data-filtro="todas" aria-pressed="true">Todas</button>
+        <button type="button" data-filtro="libre" aria-pressed="false">Libres</button>
+        <button type="button" data-filtro="reservada" aria-pressed="false">Reservadas</button>
+        <button type="button" data-filtro="venta" aria-pressed="false">En venta</button>
+        <button type="button" data-filtro="casa" aria-pressed="false">Casas</button>
+        <button type="button" data-filtro="ocupada" aria-pressed="false">Ocupadas</button>
+      </div>
+    </div>
+
+    <div class="plano-caja">
+      <div class="plano-lienzo">
+        <div class="plano-zoom">
+          <button type="button" id="plano-acercar">Acercar</button>
+          <button type="button" id="plano-alejar">Alejar</button>
+          <button type="button" id="plano-todo">El barrio entero</button>
+        </div>
+        <svg id="plano-mapa" class="plano-mapa" role="img" aria-label="Plano del barrio. El norte queda arriba."></svg>
+        <p class="plano-cuando" id="plano-cuando"></p>
+      </div>
+      <aside class="plano-lado" aria-label="Detalle del plano">
+        <p class="plano-cuentas" id="plano-cuentas"></p>
+        <div id="plano-ficha" class="plano-ficha" aria-live="polite">
+          <p>Pulsa una casilla, una casa o un edificio.</p>
+        </div>
+        <h2>Resultados</h2>
+        <ul id="plano-resultados" class="plano-lista"></ul>
+        <h2 id="plano-edificios-titulo">Edificios</h2>
+        <ul id="plano-edificios" class="plano-lista"></ul>
+        <h2 id="plano-leyenda-titulo">Colores</h2>
+        <ul class="plano-leyenda">
+          <li><span class="muestra libre"></span> Libre. En el juego la compra la pala de oro.</li>
+          <li><span class="muestra reservada"></span> Reservada, sin el nombre de quien la apartó.</li>
+          <li><span class="muestra venta"></span> En venta, con el precio.</li>
+          <li><span class="muestra casa"></span> Casa de quien ha pedido salir, con su nombre.</li>
+          <li><span class="muestra ocupada"></span> Con dueño, sin nombre.</li>
+          <li><span class="muestra edificio"></span> Edificio de la plaza.</li>
+        </ul>
+      </aside>
+    </div>
+    <noscript><p>El plano se dibuja en el navegador. Sin eso, en el juego la barra dice si la parcela está libre, reservada o en venta.</p></noscript>
+  </main>
+  <footer class="pie">
+    <div class="envoltorio">
+      <p class="pie-nombre"><span data-campo="nombre">Preguntones</span></p>
+      <p><span data-campo="nombre">Preguntones</span> no es un producto oficial de Minecraft y no está aprobado por Mojang ni por Microsoft.</p>
+      <nav aria-label="Pie">
+        <ul class="pie-enlaces">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="entrar.html">Cómo entrar</a></li>
+          <li><a href="plano.html" aria-current="page">El plano</a></li>
+          <li><a href="normas.html">Normas</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <li><a href="condiciones.html">Condiciones de compra</a></li>
+          <li><a href="https://discord.gg/ZjcnvSkqsQ" data-campo="discord" data-campo-modo="solo-href">Discord</a></li>
+        </ul>
+      </nav>
+      <p>Servidor <strong data-campo="hostname">play.preguntones.es</strong> · Minecraft Java <strong data-campo="clientes">26.1, 26.2 o 26.3</strong> · La XO: <span data-campo="cita">sábado a las 21:30, hora de Madrid</span>.</p>
+    </div>
+  </footer>
+  <script src="js/identidad.js"></script>
+  <script src="js/sitio.js"></script>
+  <script src="js/plano.js"></script>
+</body>
+</html>

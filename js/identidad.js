@@ -6,7 +6,6 @@
     hostname: "play.preguntones.es",
     version: "26.1.2",
     clientes: "26.1, 26.2 o 26.3",
-    clientes: "26.1, 26.2 o 26.3",
     discord: "https://discord.gg/ZjcnvSkqsQ",
     tiendaUrl: "https://preguntones.tebex.store/package/7805453",
     tiendaZorro: "https://preguntones.tebex.store/package/7818716",
