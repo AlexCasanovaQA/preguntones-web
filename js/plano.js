@@ -167,7 +167,7 @@
       return;
     }
     if (casilla.estado === "libre") {
-      bloque.appendChild(parrafo("Parcela libre. En el juego la compra la pala de oro. La primera cuesta 25 duros; la siguiente, más."));
+      bloque.appendChild(parrafo("Parcela libre. En el juego la compra la pala de oro. La primera cuesta 250 duros; la siguiente, más."));
     } else if (casilla.estado === "reservada") {
       bloque.appendChild(parrafo("Reservada. La pala no la compra mientras dure. El nombre no sale aquí."));
     } else if (casilla.estado === "venta") {
